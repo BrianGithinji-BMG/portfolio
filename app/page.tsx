@@ -13,6 +13,8 @@ const TICKER_ITEMS = [
   'Algorithmic Trading',
   'Stochastic Calculus',
   'Fixed Income Analysis',
+  'African Capital Markets',
+  'CFA Level I',
 ]
 
 export default function HomePage() {
@@ -104,7 +106,7 @@ export default function HomePage() {
               {/* Stats row */}
               <div className="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-[#1e2329]">
                 {[
-                  { value: '6+', label: 'Quant Projects' },
+                  { value: '6+', label: 'individual projects' },
                   { value: '3rd', label: 'CFA Challenge' },
                   { value: 'L1', label: 'CFA Candidate' },
                 ].map(({ value, label }) => (
@@ -144,8 +146,8 @@ export default function HomePage() {
                     ['degree', '"BSc Financial Engineering"'],
                     ['institution', '"JKUAT, Kenya"'],
                     ['cfa_level', '"Level I — Nov 2026"'],
-                    ['specialisation', '"Quant Research"'],
-                    ['markets', '"NSE, African Equities"'],
+                    ['specialisation', '"Investment Strategies, Risk Management, & Market Analysis"'],
+                    ['markets', '"NSE, African Equities,NYSE,NASDAQ"'],
                   ].map(([key, val]) => (
                     <div key={key} className="pl-4">
                       <span className="text-[#c9a84c]">"{key}"</span>
@@ -271,17 +273,24 @@ export default function HomePage() {
             },
             {
               id: '03',
-              title: 'Mean-Variance Portfolio Optimiser',
-              desc: 'Markowitz efficient frontier construction for NSE equities with Monte Carlo portfolio simulation, Sharpe-optimal allocation, and constraint handling.',
-              tags: ['Portfolio', 'Quant'],
-              tech: 'Python · cvxpy · NumPy',
+              title: 'ARDL-XGBOOST Hybrid model for Repo Rate Forecasting',
+              desc: 'Combining ARDL time series analysis with XGBoost regression to forecast Central Bank of Kenya repo rate movements.',
+              tags: ['Time Series', 'Econometrics'],
+              tech: 'Python · arch · statsmodels',
             },
             {
               id: '04',
-              title: 'GARCH Volatility Forecasting',
-              desc: 'Comparative study of GARCH, EGARCH, and GJR-GARCH volatility models on NSE equities with VaR backtesting via Kupiec & Christoffersen tests.',
-              tags: ['Time Series', 'Econometrics'],
-              tech: 'Python · arch · statsmodels',
+              title: 'REThink – AI-Powered Reinsurance Decision Support',
+              desc: 'AI-powered facultative reinsurance system developed for Kenya Reinsurance Corporation hackathon. Placed 4th place. Automates submission processing, risk analysis, and underwriting recommendations.',
+              tags: ['AI', 'Reinsurance', 'InsurTech'],
+              tech: 'React · Python · FastAPI · Gemini',
+            },
+            {
+              id: '05',
+              title: 'Melanin-Centered Skincare Recommendation System',
+              desc: 'AI-powered skincare recommender for women of color using ML and NLP. Achieves 99% hit rate with hybrid filtering approach. Moringa Data Science final project.',
+              tags: ['ML', 'Data Science', 'AI', 'Beauty Tech'],
+              tech: 'Python · Streamlit · TensorFlow · NLP',
             },
           ].map(({ id, title, desc, tags, tech }) => (
             <div

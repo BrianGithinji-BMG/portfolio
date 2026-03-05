@@ -16,7 +16,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-6">
           <a
-            href="https://github.com/briangithinji"
+            href="https://github.com/BrianGithinji-BMG"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#6b7280] hover:text-[#c9a84c] transition-colors"
@@ -24,7 +24,7 @@ export default function Footer() {
             <Github size={16} />
           </a>
           <a
-            href="https://linkedin.com/in/briangithinji"
+            href="https://www.linkedin.com/in/brian-githinji-a9903023a/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#6b7280] hover:text-[#c9a84c] transition-colors"
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
 
         <span className="font-mono text-[10px] text-[#6b7280] tracking-widest uppercase">
-          © {new Date().getFullYear()} · JKUAT, Juja, Kenya
+          © 2026 Brian Githinji. All rights reserved.
         </span>
       </div>
     </footer>

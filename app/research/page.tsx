@@ -10,48 +10,26 @@ export const metadata: Metadata = {
 // ── To add a new article, add an entry to this array ──
 const ARTICLES = [
   {
-    id: 'nse-bond-market-2024',
-    title: 'Kenya Government Bond Market: Yield Curve Analysis & Investment Implications',
+    id: 'jan-2026-treasury-bonds',
+    title: 'January 2026 Treasury Bonds Auction – Returns and Deadlines',
     excerpt:
-      'An analysis of the Kenya government bond yield curve, term premium decomposition, and duration risk management strategies for domestic fixed income investors.',
+      'Analysis of Kenya Central Bank Treasury Bonds auction with coupon rates, maturity dates, after-tax returns, and investment deadlines. Covers FXD1/2019/020 and FXD1/2022/025 bonds.',
     category: 'Fixed Income',
-    date: 'December 2024',
-    readTime: '8 min',
-    tags: ['Bonds', 'Yield Curve', 'Kenya', 'Fixed Income'],
-    url: 'https://fahamisha.com', // replace with actual blog link
-  },
-  {
-    id: 'nse-equity-momentum',
-    title: 'Cross-Sectional Momentum in NSE Equities: Evidence & Strategy Construction',
-    excerpt:
-      'Empirical study of price momentum factors on the Nairobi Securities Exchange, strategy construction methodology, and realistic transaction cost analysis for implementation.',
-    category: 'Equity Research',
-    date: 'November 2024',
-    readTime: '12 min',
-    tags: ['NSE', 'Momentum', 'Equity', 'Quant'],
-    url: 'https://fahamisha.com',
-  },
-  {
-    id: 'african-markets-fintech',
-    title: 'Fintech Infrastructure and Capital Market Development in Sub-Saharan Africa',
-    excerpt:
-      'Exploring how mobile money penetration, digital lending infrastructure, and regulatory frameworks are reshaping investment opportunities across African capital markets.',
-    category: 'Market Commentary',
-    date: 'October 2024',
+    date: 'December 2025',
     readTime: '6 min',
-    tags: ['Africa', 'Fintech', 'Market Development'],
-    url: 'https://fahamisha.com',
+    tags: ['Treasury Bonds', 'Fixed Income', 'Kenya', 'CBK'],
+    url: 'https://fahamisha.com/2025/12/16/january-2026-treasury-bonds-auction-investment-returns-and-deadlines/',
   },
   {
-    id: 'var-modelling-emerging',
-    title: 'Value-at-Risk Modelling in Emerging Markets: Challenges & Best Practices',
+    id: 'kenya-shilling-stability',
+    title: 'Kenya Shilling 1:29 Stability Strategy',
     excerpt:
-      'Why standard VaR assumptions break down in thin, volatile emerging markets and how to adapt parametric, historical simulation, and Monte Carlo approaches accordingly.',
-    category: 'Risk Management',
-    date: 'September 2024',
-    readTime: '10 min',
-    tags: ['VaR', 'Risk', 'Emerging Markets'],
-    url: 'https://fahamisha.com',
+      'Strategic analysis on Kenya shilling stability at 1:29 exchange rate and currency risk management strategies for investors.',
+    category: 'Market Commentary',
+    date: 'November 2025',
+    readTime: '5 min',
+    tags: ['Kenya Shilling', 'Currency', 'Economics'],
+    url: 'https://www.linkedin.com/pulse/kenya-shilling-129-stability-strategy-brian-githinji-i0pmf/?trackingId=4JY9OCpKTEOk%2FzibSKEqNA%3D%3D',
   },
 ]
 
@@ -91,7 +69,7 @@ export default function ResearchPage() {
           </div>
           <div className="flex justify-start md:justify-end">
             <a
-              href="https://fahamisha.com"
+              href="https://fahamisha.com/blog/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline flex items-center gap-2"
@@ -175,32 +153,6 @@ export default function ResearchPage() {
               </div>
             </a>
           ))}
-        </div>
-
-        {/* Add article guide */}
-        <div className="mt-8 bg-[#0d1117] border border-[#1e2329] p-5">
-          <div className="font-mono text-[10px] tracking-[0.2em] text-[#c9a84c] uppercase mb-2">
-            Adding a New Article
-          </div>
-          <p className="text-[#6b7280] text-sm">
-            Add a new entry to the{' '}
-            <code className="font-mono text-[#c9a84c] bg-[#080a0c] px-1.5 py-0.5 text-[11px]">
-              ARTICLES
-            </code>{' '}
-            array at the top of{' '}
-            <code className="font-mono text-[#c9a84c] bg-[#080a0c] px-1.5 py-0.5 text-[11px]">
-              app/research/page.tsx
-            </code>
-            . For full MDX blog support with local markdown files, run{' '}
-            <code className="font-mono text-[#c9a84c] bg-[#080a0c] px-1.5 py-0.5 text-[11px]">
-              npm install next-mdx-remote gray-matter
-            </code>{' '}
-            and create posts in{' '}
-            <code className="font-mono text-[#c9a84c] bg-[#080a0c] px-1.5 py-0.5 text-[11px]">
-              /content/research/
-            </code>
-            .
-          </p>
         </div>
       </section>
     </div>

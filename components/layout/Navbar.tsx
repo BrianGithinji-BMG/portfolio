@@ -58,7 +58,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="https://github.com/briangithinji"
+            href="https://github.com/BrianGithinji-BMG"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[11px] tracking-widest uppercase text-[#6b7280] hover:text-[#c9a84c] transition-colors"

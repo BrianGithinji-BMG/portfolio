@@ -14,7 +14,7 @@ export default function ContactPage() {
     try {
       // Using Formspree — replace YOUR_FORM_ID with your actual Formspree form ID
       // Get a free form at https://formspree.io
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const res = await fetch('https://formspree.io/f/mjgabeyn', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(form),
@@ -108,19 +108,13 @@ export default function ContactPage() {
                 icon: <Github size={15} />,
                 label: 'GitHub',
                 handle: '@briangithinji',
-                href: 'https://github.com/briangithinji',
+                href: 'https://github.com/BrianGithinji-BMG',
               },
               {
                 icon: <Linkedin size={15} />,
                 label: 'LinkedIn',
                 handle: 'Brian M. Githinji',
-                href: 'https://linkedin.com/in/briangithinji',
-              },
-              {
-                icon: <ExternalLink size={15} />,
-                label: 'Blog / Articles',
-                handle: 'Fahamisha Investing',
-                href: 'https://fahamisha.com',
+                href: 'https://www.linkedin.com/in/brian-githinji-a9903023a/',
               },
             ].map(({ icon, label, handle, href }) => (
               <a
@@ -227,11 +221,6 @@ export default function ContactPage() {
               >
                 {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
-
-              <p className="font-mono text-[10px] text-[#6b7280]">
-                Powered by Formspree — replace YOUR_FORM_ID in contact/page.tsx with your free
-                Formspree ID from formspree.io
-              </p>
             </form>
           )}
         </div>

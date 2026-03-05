@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     'Financial Engineering student at JKUAT, CFA Level I Candidate. Specialising in quantitative research, portfolio optimisation, derivatives pricing, and algorithmic trading.',
   keywords: [
     'Financial Engineering',
+    'Investment Strategies',
+    'Market Analysis',
     'Quantitative Finance',
     'Portfolio Optimization',
     'Derivatives Pricing',
@@ -29,14 +31,14 @@ export const metadata: Metadata = {
     url: 'https://briangithinji.vercel.app',
     title: 'Brian M. Githinji | Quantitative Finance',
     description:
-      'Financial Engineering | Quantitative Research | Risk & Derivatives',
+      'Financial Engineering | Quantitative Research | Risk & Derivatives |Investment Strategies | Market Analysis',
     siteName: 'Brian M. Githinji',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Brian M. Githinji | Quantitative Finance',
     description:
-      'Financial Engineering | Quantitative Research | Risk & Derivatives',
+      'Financial Engineering | Quantitative Research | Risk & Derivatives |Investment Strategies | Market Analysis',
   },
 }
 

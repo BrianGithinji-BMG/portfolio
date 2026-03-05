@@ -66,7 +66,7 @@ export default function ProjectsPage() {
           </div>
           <div className="flex flex-wrap gap-3 justify-start md:justify-end">
             <a
-              href="https://github.com/briangithinji"
+              href="https://github.com/BrianGithinji-BMG"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline flex items-center gap-2"
@@ -107,14 +107,26 @@ export default function ProjectsPage() {
                     </a>
                   )}
                   {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#6b7280] hover:text-[#c9a84c] transition-colors"
-                    >
-                      <ExternalLink size={14} />
-                    </a>
+                    project.demo.startsWith('/') ? (
+                      <a
+                        href={project.demo}
+                        download="NMB_FINANCIAL_MODEL.xlsx"
+                        className="text-[#6b7280] hover:text-[#c9a84c] transition-colors cursor-pointer"
+                        title="Download Excel Model"
+                      >
+                        <ExternalLink size={14} />
+                      </a>
+                    ) : (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#6b7280] hover:text-[#c9a84c] transition-colors"
+                        title="View Demo"
+                      >
+                        <ExternalLink size={14} />
+                      </a>
+                    )
                   )}
                   <ArrowUpRight
                     size={14}
@@ -196,36 +208,6 @@ export default function ProjectsPage() {
           </div>
         </section>
       )}
-
-      {/* Add project guide */}
-      <section className="max-w-6xl mx-auto px-6">
-        <div className="bg-[#0d1117] border border-[#1e2329] p-6">
-          <div className="font-mono text-[10px] tracking-[0.2em] text-[#c9a84c] uppercase mb-3">
-            Adding a New Project
-          </div>
-          <p className="text-[#6b7280] text-sm mb-3">
-            To add a new project, edit{' '}
-            <code className="font-mono text-[#c9a84c] bg-[#080a0c] px-1.5 py-0.5 text-[11px]">
-              /data/projects.json
-            </code>{' '}
-            and add an entry following this schema:
-          </p>
-          <pre className="font-mono text-[11px] text-[#6b7280] bg-[#080a0c] border border-[#1e2329] p-4 overflow-auto leading-relaxed">
-            {`{
-  "id": "my-new-project",
-  "title": "NSE Option Pricing & VaR Dashboard",
-  "description": "Short description shown on the card.",
-  "longDescription": "Full detailed description.",
-  "tech": ["Python", "Streamlit", "NumPy"],
-  "tags": ["Quant", "Risk", "Derivatives"],
-  "github": "https://github.com/briangithinji/my-project",
-  "demo": "https://my-app.streamlit.app",
-  "featured": true,
-  "year": 2025
-}`}
-          </pre>
-        </div>
-      </section>
     </div>
   )
 }
