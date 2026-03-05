@@ -1,0 +1,74 @@
+[
+  {
+    "id": "nse-option-pricing-var",
+    "title": "NSE Option Pricing & VaR Dashboard",
+    "description": "Interactive Streamlit dashboard for pricing options on NSE-listed equities using Black-Scholes and Monte Carlo simulation. Includes historical VaR and CVaR computation, implied volatility surface visualization, and Greeks sensitivity analysis. Designed for real-time risk monitoring of equity derivatives on the Nairobi Securities Exchange.",
+    "longDescription": "Built a comprehensive risk analytics platform targeting the Kenyan derivatives market. The system implements Black-Scholes closed-form pricing, binomial trees, and 10,000-path Monte Carlo simulations. Value-at-Risk is computed at 95% and 99% confidence levels using both historical simulation and parametric methods. CVaR (Expected Shortfall) is reported alongside for tail-risk quantification.",
+    "tech": ["Python", "Streamlit", "NumPy", "SciPy", "Pandas", "Plotly", "yFinance"],
+    "tags": ["Quant", "Derivatives", "Risk", "Pricing"],
+    "github": "https://github.com/briangithinji",
+    "demo": null,
+    "featured": true,
+    "year": 2024
+  },
+  {
+    "id": "credit-scoring-xgboost",
+    "title": "Agricultural Credit Scoring Model",
+    "description": "XGBoost-based credit risk model achieving 89% accuracy across 500+ smallholder farmers. Integrates agricultural metrics, seasonal cash-flow patterns, and mobile money transaction history. SHAP explainability layer ensures regulatory transparency for fintech deployment.",
+    "longDescription": "Developed for Sowphie's agri-fintech platform to automate credit underwriting for smallholder farmers lacking traditional credit history. The pipeline ingests multi-source data (satellite yield proxies, mobile money history, farm size), engineers 40+ features, and trains an XGBoost classifier with Bayesian hyperparameter optimization. SHAP values provide loan officer-interpretable explanations. Synthetic data augmentation addressed class imbalance.",
+    "tech": ["Python", "XGBoost", "SHAP", "Scikit-learn", "Pandas", "SQL"],
+    "tags": ["ML", "Credit Risk", "Fintech", "AgriFinance"],
+    "github": "https://github.com/briangithinji",
+    "demo": null,
+    "featured": true,
+    "year": 2025
+  },
+  {
+    "id": "portfolio-optimization",
+    "title": "Mean-Variance Portfolio Optimizer",
+    "description": "Markowitz mean-variance optimization engine for NSE equities. Constructs the efficient frontier, identifies the max Sharpe ratio portfolio, and minimum-variance portfolio. Includes Monte Carlo simulation of 50,000 random portfolios and constraint handling for long-only mandates.",
+    "longDescription": "Implements classical Markowitz framework extended with Black-Litterman views integration. The optimizer supports cardinality constraints (max 10 holdings), sector exposure limits, and turnover penalties. Risk decomposition reports marginal contribution to risk per asset. Backtesting module compares optimized vs equal-weight vs market-cap weighted performance over 5-year NSE historical data.",
+    "tech": ["Python", "SciPy", "NumPy", "Matplotlib", "Pandas", "cvxpy"],
+    "tags": ["Portfolio", "Quant", "Optimization"],
+    "github": "https://github.com/briangithinji",
+    "demo": null,
+    "featured": true,
+    "year": 2024
+  },
+  {
+    "id": "financial-time-series",
+    "title": "GARCH Volatility Forecasting — NSE",
+    "description": "Volatility forecasting pipeline for Nairobi Securities Exchange equities using GARCH(1,1), EGARCH, and GJR-GARCH models. Includes rolling forecast backtests, Diebold-Mariano predictive accuracy tests, and VaR backtesting via Kupiec and Christoffersen tests.",
+    "longDescription": "Comprehensive study of volatility dynamics in the NSE market. Models estimated via maximum likelihood using the arch Python library. The EGARCH specification captures leverage effects observed in NSE equities. Forecast evaluation uses RMSE, MAE, and QLIKE loss functions. The pipeline outputs 1-day and 10-day ahead volatility forecasts formatted for risk reporting.",
+    "tech": ["Python", "arch", "statsmodels", "Pandas", "Matplotlib", "R"],
+    "tags": ["Time Series", "Risk", "Volatility", "Econometrics"],
+    "github": "https://github.com/briangithinji",
+    "demo": null,
+    "featured": false,
+    "year": 2024
+  },
+  {
+    "id": "algorithmic-trading",
+    "title": "Algorithmic Trading Strategy — Momentum + ML",
+    "description": "Systematic long-short momentum strategy on NSE equities enhanced with ML signal generation. Uses cross-sectional momentum ranking, transaction cost modeling, and walk-forward optimization. Achieves positive Sharpe ratio over 2019-2023 backtest period.",
+    "longDescription": "Strategy combines 3-12 month cross-sectional price momentum with fundamental quality screens. An XGBoost classifier filters high-confidence momentum signals. Portfolio construction uses volatility-scaled position sizing. The backtest framework is fully vectorized with realistic transaction costs (0.15% one-way), bid-ask spread estimation, and market impact modeling.",
+    "tech": ["Python", "Backtrader", "Pandas", "XGBoost", "Matplotlib"],
+    "tags": ["Trading", "Quant", "ML", "Systematic"],
+    "github": "https://github.com/briangithinji",
+    "demo": null,
+    "featured": false,
+    "year": 2023
+  },
+  {
+    "id": "equity-research-cfa",
+    "title": "CFA Research Challenge — Equity Valuation Report",
+    "description": "Full institutional-grade equity research report prepared for the CFA Research Challenge 2025 (East Africa). Includes DCF, EV/EBITDA, and P/E relative valuation, Porter's Five Forces, SWOT, and ESG analysis. Team finished 3rd Place nationally.",
+    "longDescription": "Comprehensive sell-side style research report following CFA Institute standards. The valuation integrates a 5-year DCF with WACC decomposition, scenario analysis (bull/base/bear), and sensitivity tables. Comparable company analysis uses peer multiples from East African listed peers. The report includes macroeconomic overlay on Kenyan GDP, inflation, and interest rate forecasts from the CBK.",
+    "tech": ["Excel", "Python", "PowerPoint", "Bloomberg Terminal"],
+    "tags": ["Equity Research", "Valuation", "CFA"],
+    "github": null,
+    "demo": null,
+    "featured": true,
+    "year": 2025
+  }
+]
