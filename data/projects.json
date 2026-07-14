@@ -12,6 +12,18 @@
     "year": 2026
   },
   {
+    "id": "zokodata-nse-platform",
+    "title": "ZokoData — NSE Data Access & Distribution Platform",
+    "description": "End-to-end financial data infrastructure for the Nairobi Securities Exchange. Automates scraping, PDF extraction and aggregation of historical equities data into clean Excel/PDF datasets, sold directly to retail and institutional users via M-Pesa STK Push.",
+    "longDescription": "ZokoData is a full-stack data platform that turns raw NSE bulletin PDFs into structured, analysis-ready datasets. A FastAPI backend orchestrates a scraper that pulls daily NSE reports, an extractor built on pdfplumber/pandas that parses them into normalised price tables, and an aggregator that produces monthly closing-price summaries. PostgreSQL stores the catalogue and order history; an auto-quote pricing calculator handles single-day vs multi-month ranges (KES 150–1,500 tiers). Checkout is wired to the Safaricom Daraja API for M-Pesa STK Push payments, with a callback flow that releases the purchased file once the transaction settles. The React + Tailwind frontend includes a pricing calculator, data browser, checkout modal and admin export-email endpoint for fire-and-forget background delivery. Shipped with Docker Compose for local development and deployed to Railway via nixpacks/Dockerfile.",
+    "tech": ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "pdfplumber", "pandas", "React", "Tailwind CSS", "M-Pesa Daraja", "Docker", "Railway"],
+    "tags": ["Fintech", "Data Platform", "Capital Markets", "Payments"],
+    "github": "https://github.com/BrianGithinji-BMG/ZokoData",
+    "demo": "https://zokodata.com",
+    "featured": true,
+    "year": 2026
+  },
+  {
     "id": "credit-scoring-xgboost",
     "title": "Agricultural Credit Scoring Model",
     "description": "XGBoost-based credit risk model achieving 89% accuracy across 500+ smallholder farmers. Integrates agricultural metrics, seasonal cash-flow patterns, and mobile money transaction history. SHAP explainability layer ensures regulatory transparency for fintech deployment.",
@@ -49,15 +61,15 @@
   },
   {
     "id": "ardl-xgboost-repo-rate",
-    "title": "ARDL-XGBOOST Hybrid model for Repo Rate Forecasting",
-    "description": "Combining ARDL time series analysis with XGBoost regression to forecast Central Bank of Kenya repo rate movements.",
-    "longDescription": "Combining ARDL time series analysis with XGBoost regression to forecast Central Bank of Kenya repo rate movements.",
-    "tech": ["Python", "arch", "statsmodels", "XGBoost"],
-    "tags": ["Time Series", "Econometrics"],
-    "github": null,
-    "demo": null,
-    "featured": false,
-    "year": "Final Year Project 2026"
+    "title": "ARDL × XGBoost Hybrid Model for Repo Rate Forecasting",
+    "description": "Interactive web app forecasting Kenya's monthly Central Bank repo rate using a hybrid ARDL–XGBoost framework. Built on the BFE 4.2 dissertation, with three switchable models (ARDL, XGBoost, Hybrid), confidence bands, monthly contribution analysis, and editable lag history for stress-testing.",
+    "longDescription": "Production deployment of the hybrid forecasting model developed for the BFE 4.2 dissertation \"Predicting Repurchase Rates Using a Hybrid ARDL–XGBoost Model.\" The ARDL component is computed client-side from hardcoded coefficients for transparency; the XGBoost and hybrid forecasts run on Vercel Python serverless functions. Users can switch between three forecasting models, load pre-built macro scenarios (late-2024 baseline, easing cycle, inflation shock), and edit the lag history directly to stress-test the model against custom paths. Live forecasts are rendered with Recharts confidence bands and a monthly driver contribution view.",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Python", "XGBoost", "pandas", "Vercel Serverless"],
+    "tags": ["Time Series", "Econometrics", "Quant"],
+    "github": "https://github.com/BrianGithinji-BMG/repo-rate-forecaster",
+    "demo": "https://repo-rate-forecaster.vercel.app",
+    "featured": true,
+    "year": "BFE 4.2 Dissertation 2026"
   },
   {
     "id": "rethink-reinsurance-ai",

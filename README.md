@@ -2,7 +2,7 @@
 
 > Personal portfolio showcasing projects in **quantitative finance**, **financial engineering**, and **financial data science** — including derivatives pricing, portfolio optimisation, risk modelling, and financial time-series analysis with a focus on African capital markets and the Nairobi Securities Exchange (NSE).
 
-**Live Site:** [briangithinji.vercel.app](https://briangithinji.vercel.app)
+**Live Site:** [briangithinji.vercel.app](https://myportfolio-teal-beta.vercel.app/)
 
 ---
 
