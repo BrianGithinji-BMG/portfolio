@@ -1,0 +1,32 @@
+[
+  {
+    "id": "carbacid",
+    "company": "Carbacid Investments Plc",
+    "ticker": "NSE: CARB",
+    "description": "Equity valuation model for Carbacid Investments Plc, an NSE-listed industrial gases producer. Built as a DCF and relative valuation model with a supporting written report covering business overview, financials, and valuation methodology.",
+    "method": ["DCF", "Relative Valuation"],
+    "date": "June 2026",
+    "model": "/valuations/Carbacid_Model.xlsx",
+    "report": "/valuations/Carbacid_Report.pdf"
+  },
+  {
+    "id": "kplc",
+    "company": "Kenya Power & Lighting Company (KPLC)",
+    "ticker": "NSE: KPLC",
+    "description": "Equity valuation model for Kenya Power & Lighting Company, Kenya's national electricity transmission and distribution utility. Includes financial statement modelling and valuation build-up.",
+    "method": ["DCF", "Relative Valuation"],
+    "date": "July 2026",
+    "model": "/valuations/KPLC_Model.xlsx",
+    "report": null
+  },
+  {
+    "id": "nmb",
+    "company": "NMB Financial Model — CFA Research Challenge",
+    "ticker": null,
+    "description": "Full institutional-grade equity valuation model prepared for the CFA Research Challenge 2025 (East Africa). Integrates a 5-year DCF with WACC decomposition, scenario analysis, and comparable company analysis. Team finished 3rd place nationally.",
+    "method": ["DCF", "EV/EBITDA", "P/E Relative Valuation"],
+    "date": "2025-2026",
+    "model": "/NMB_FINANCIAL_MODEL.xlsx",
+    "report": null
+  }
+]

@@ -4,7 +4,7 @@ import { GraduationCap, Award, Users, Target, MapPin } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Financial Engineering student at JKUAT, CFA Level I Candidate. Building quantitative research capabilities for African capital markets.',
+    'BSc Financial Engineering graduate (JKUAT). Building quantitative research capabilities for African capital markets.',
 }
 
 export default function AboutPage() {
@@ -30,10 +30,9 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-[#9ca3af] leading-relaxed mb-4">
-              I am a final-year BSc Financial Engineering student at JKUAT and a CFA Level I
-              candidate (November 2026). My work sits at the intersection of quantitative
-              methods, machine learning, and African capital markets — specifically the Nairobi
-              Securities Exchange.
+              I am a BSc Financial Engineering graduate of JKUAT. My work sits at the
+              intersection of quantitative methods, machine learning, and African capital
+              markets — specifically the Nairobi Securities Exchange.
             </p>
             <p className="text-[#6b7280] leading-relaxed mb-4">
               I believe the next wave of quantitative finance innovation will come from emerging
@@ -85,17 +84,9 @@ export default function AboutPage() {
         <div className="space-y-6">
           {[
             {
-              institution: 'CFA Institute',
-              degree: 'CFA Level I Candidate',
-              period: 'Expected: November 2026',
-              detail:
-                'Self-study programme covering Quantitative Methods, Economics, Financial Reporting & Analysis, Corporate Finance, Equity Investments, Fixed Income, Derivatives, Alternative Investments, and Portfolio Management.',
-              tags: ['CFA', 'Investment Analysis', 'Ethics'],
-            },
-            {
               institution: 'Jomo Kenyatta University of Agriculture and Technology (JKUAT)',
               degree: 'BSc Financial Engineering',
-              period: 'Expected: December 2026 · Second Class Upper Division',
+              period: 'August 2026 · Second Class Upper Division',
               detail:
                 'Key coursework: Financial Modelling, Corporate Finance, Algorithmic Trading, Portfolio Optimisation, Stochastic Calculus, Financial Time Series, Extreme Financial Risk Management.',
               tags: [
@@ -224,11 +215,11 @@ export default function AboutPage() {
               title: 'CFA Research Challenge 2025–2026',
               sub: 'Team Lead — JKUAT | 3rd Place, CFA Society East Africa',
               desc: 'Led a team of 5 in full company valuation, equity research, and financial modelling. Prepared institutional-grade investment report with DCF, relative valuation, industry analysis, and risk assessment.',
-              tag: 'CFA',
+              tag: 'Equity Research',
             },
             {
               title: 'JKUAT Financial Engineers Association',
-              sub: 'Vice Chair (JKUAFE)',
+              sub: 'Former Vice Chair (JKUAFE)',
               desc: 'Organised financial literacy workshops, engaged external partners for collaborations, and led club projects bridging academic finance with industry practice.',
               tag: 'Leadership',
             },

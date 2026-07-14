@@ -14,7 +14,7 @@ const TICKER_ITEMS = [
   'Stochastic Calculus',
   'Fixed Income Analysis',
   'African Capital Markets',
-  'CFA Level I',
+  'Equity Valuation',
 ]
 
 export default function HomePage() {
@@ -87,13 +87,16 @@ export default function HomePage() {
               </p>
 
               <p className="text-[#6b7280] text-sm leading-relaxed mb-8 max-w-lg">
-                Final-year BSc Financial Engineering @ JKUAT · CFA Level I Candidate (Nov 2026) ·
-                Quantitative Research · Derivatives Pricing · Portfolio Optimisation
+                BSc Financial Engineering graduate, JKUAT · Quantitative Research · Derivatives
+                Pricing · Portfolio Optimisation
               </p>
 
               <div className="flex flex-wrap gap-3">
                 <Link href="/projects" className="btn-primary">
                   View Projects <ArrowRight size={14} />
+                </Link>
+                <Link href="/valuation-reports" className="btn-outline">
+                  Valuation & Reports
                 </Link>
                 <Link href="/research" className="btn-outline">
                   Research
@@ -108,7 +111,7 @@ export default function HomePage() {
                 {[
                   { value: '6+', label: 'individual projects' },
                   { value: '3rd', label: 'CFA Challenge' },
-                  { value: 'L1', label: 'CFA Candidate' },
+                  { value: '3', label: 'valuation models' },
                 ].map(({ value, label }) => (
                   <div key={label}>
                     <div className="stat-number">{value}</div>
@@ -145,7 +148,7 @@ export default function HomePage() {
                   {[
                     ['degree', '"BSc Financial Engineering"'],
                     ['institution', '"JKUAT, Kenya"'],
-                    ['cfa_level', '"Level I — Nov 2026"'],
+                    ['status', '"Graduate"'],
                     ['specialisation', '"Investment Strategies, Risk Management, & Market Analysis"'],
                     ['markets', '"NSE, African Equities,NYSE,NASDAQ"'],
                   ].map(([key, val]) => (

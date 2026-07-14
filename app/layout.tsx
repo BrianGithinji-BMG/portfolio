@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: '%s | Brian M. Githinji',
   },
   description:
-    'Financial Engineering student at JKUAT, CFA Level I Candidate. Specialising in quantitative research, portfolio optimisation, derivatives pricing, and algorithmic trading.',
+    'BSc Financial Engineering graduate (JKUAT). Specialising in quantitative research, portfolio optimisation, derivatives pricing, and algorithmic trading.',
   keywords: [
     'Financial Engineering',
     'Investment Strategies',
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     'Derivatives Pricing',
     'Algorithmic Trading',
     'Risk Management',
+    'Equity Valuation',
     'Kenya',
     'NSE',
-    'CFA',
     'Brian Githinji',
   ],
   authors: [{ name: 'Brian M. Githinji' }],
